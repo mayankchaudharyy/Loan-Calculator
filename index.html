@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <section class="section">
+        <div class="sect">
+            <div class="loan-head">
+                <h1>Loan Calculator</h1>
+                <div class="all-inputs">
+                    <div>
+                        <p class="lab">Amount</p>
+                        <input type="number" value="20000" class="amount">
+                    </div>
+                    <div>
+                        <p class="lab">Interest Rate</p>
+                        <input type="number" value="7.5" class="interest">
+                    </div>
+                    <!-- <div>
+                        <p>Intrest Rate Per year or per months</p>
+                        <select name="" id="choose">
+                            <option value="" selected disabled hidden> year or per months</option>
+                            <option value="year">Intrest Rate per year</option>
+                            <option value="month">Intrest Rate per month</option>
+                        </select>
+                    </div> -->
+                    <div>
+                        <p class="lab yOrm">Tenure (in months)</p>
+                        <input type="number" value="36" class="tenure">
+                    </div>
+                </div>
+            </div>
+            <div class="loan-hero">
+                <div class="loan-hero-left">
+                    <div>
+                        <h3>Loan Emi</h3>
+                        <h1 class="loan-emi">000</h1>
+                    </div>
+                    <div>
+                        <h3>Total Interest Payable</h3>
+                        <h1 class="int-pay">000</h1>
+                    </div>
+                    <div>
+                        <h3>Total Amount</h3>
+                        <h1 class="total">000</h1>
+                    </div>
+                    <section>
+                        <button class="btn">Calculate</button>
+                    </section>
+                </div>
+                <div class="chart" >
+                    <canvas id="myChart" width="400" height="400" ></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
